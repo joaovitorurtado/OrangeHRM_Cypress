@@ -7,6 +7,8 @@ module.exports = defineConfig({
     },
   },
   env: {
-    login_URL: "https://opensource-demo.orangehrmlive.com"
+    login_URL: "https://opensource-demo.orangehrmlive.com",
+    usuario: "Admin",
+    senha: "admin123"
   }
 });

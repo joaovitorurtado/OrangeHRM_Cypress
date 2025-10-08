@@ -20,8 +20,8 @@ describe('Login', () => {
   })
     it('4 - Login com usuário e senha válidas', () => {
     cy.visit(Cypress.env('login_URL'))
-    cy.get('[name="username"]').type('Admin')
-    cy.get('[name="password"]').type('admin123')
+    cy.get('[name="username"]').type(Cypress.env('usuario'))
+    cy.get('[name="password"]').type(Cypress.env('senha'))
     cy.get('.oxd-button').click()
     cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').contains('Dashboard')
   })
